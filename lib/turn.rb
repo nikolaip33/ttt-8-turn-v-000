@@ -22,6 +22,16 @@ end
 
 def turn(board)
   puts "Please enter 1-9:"
+  input = gets.strip
+  index = input_to_index(input)
+  validation = valid_move?(board, index)
+
+  if validation == false
+    turn(board)
+  else
+    move(board)
+    display_board(board)
+  end
 end
 
 def position_taken?(board, index)
