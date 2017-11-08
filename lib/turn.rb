@@ -29,7 +29,7 @@ def turn(board)
   if validation == false
     turn(board)
   else
-    move(board)
+    move(board, index)
     display_board(board)
   end
 end
