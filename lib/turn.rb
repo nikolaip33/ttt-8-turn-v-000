@@ -30,7 +30,7 @@ def turn(board)
      turn(board)
     #while valid_move?(board, 0) == false
   else
-    move(board, index, token = "x")
+    move(board, index)
   end
 end
 
