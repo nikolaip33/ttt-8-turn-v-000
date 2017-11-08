@@ -27,7 +27,7 @@ def turn(board)
   validation = valid_move?(board, index)
     #gets.strip
   if !!validation == false
-     puts "Please enter 1-9:"
+     turn(board)
     #while valid_move?(board, 0) == false
   else
     move(board, index, token = "x")
