@@ -26,7 +26,7 @@ def turn(board)
   index = input_to_index(input)
   validation = valid_move?(board, index)
 
-  if validation == false
+  if !!validation == false
     turn(board)
   else
     move(board, index)
